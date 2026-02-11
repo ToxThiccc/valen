@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>Вопрос на миллион ❤️</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Montserrat:wght@400;700&display=swap');
+        
+        body {
+            background-color: #ffe4e6; /* Нежно-розовый фон */
+            font-family: 'Montserrat', sans-serif;
+            overflow: hidden; /* Чтобы не появлялись полосы прокрутки */
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .romantic-font {
+            font-family: 'Pacifico', cursive;
+        }
+
+        /* Стиль для кнопки "Нет", чтобы она могла свободно летать */
+        #no-btn {
+            position: absolute;
+            transition: all 0.1s ease; /* Очень быстрое движение */
+        }
+
+        /* Контейнер кнопок, чтобы "Да" стояла на месте */
+        .buttons-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            margin-top: 20px;
+            height: 60px; /* Фиксируем высоту */
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="card" class="bg-white p-8 rounded-3xl shadow-2xl text-center max-w-md w-full mx-4 relative z-10">
+        <img id="gif-image" src="https://media1.tenor.com/m/7zK3GGnU_xAAAAAC/milk-and-mocha-hug.gif" alt="Cute Bears" class="w-48 h-48 mx-auto object-contain mb-4">
